@@ -1,0 +1,79 @@
+<h1 class="text align center">Demo for FormGroup</h1>
+
+<div class="row">
+  <div class="col">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a routerLink="" class="navbar-brand"> akaimarine<img src="../assets/images/ship1.png" width=60px;
+          height="45px" alt=""> </a>
+
+
+      <div class=" collapse navbar-collapse" id="mynavbar"></div>
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="" class="nav-link"> </a></li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item"> <a routerLink="/home" class="nav-link" style="color: rgba(45,45,45,255);">HOME </a></li>
+        <li class="nav-item"> <a routerLink="/projects" class="nav-link" style="color: rgba(45,45,45,255);">PROJECTS
+          </a></li>
+        <li class="nav-item"> <a routerLink="/aboutus" class="nav-link" style="color: rgba(45,45,45,255);">ABOUT </a>
+        </li>
+        <li class="nav-item"> <a routerLink="/services" class="nav-link" style="color: rgba(45,45,45,255);">SERVICES</a>
+        </li>
+        <li class="nav-item"> <a routerLink="/pricing" class="nav-link" style="color: rgba(45,45,45,255);">PRICING</a>
+        </li>
+        <li class="nav-item"> <a routerLink="/contactus" class="nav-link" style="color: rgba(45,45,45,255);">CONTACT
+          </a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="header">
+
+  <h2 style="font-size: 50px;"> Contact </h2>
+  <p> A K A I M A R I N E </p>
+
+</div>
+
+<router-outlet></router-outlet><br><br>
+
+<div class="container">
+  <div class="row">
+   
+    <div class="col-md-4">
+      <div>Telephone Number <br> <b >954-224-1083</b> 
+        <hr>
+      </div> <br>
+      <div> Akai Marine <br> 435 W. Cypress Cove <br> Davie, Fl. 33325
+        <hr>
+      </div> <br>
+      <div>Email <br> Diego@akaimarine.com
+        <hr>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <form [formGroup]="akaiform">
+        <input class="px-5 py-2" type="text" name="yourname" formControlName="yourname" placeholder="Your Name">
+        <br><br>
+        <input class="px-5 py-2" type="text" name="E-mail" formControlName="E-mail" placeholder="E-Mail"> <br><br>
+        <textarea name="yourmessage" id="" cols="90" rows="5">Your Message </textarea> <br> <br>
+        <button class="btn btn-secondary" type="submit" [disabled]="!akaiform.valid" disabled>SendMessage</button>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <form [formGroup]="akaiform">
+        <input class="px-5 py-2" type="text" name="phone" formControlName="Phone" placeholder="Phone"> <br><br>
+        <input class="px-5 py-2" type="text" name="Subject" formControlName="Subject" placeholder="Subject"> <br><br>
+      </form>
+    </div>
+  </div>
+</div>
+<br> <br>
+<div class="row">
+  <div class="col-md-2"> </div>
+  <div class="col-md-2"  > </div>
+  <div class="col-md-2"> <img src="../assets/images/ship1.png" width="150px" height="125px"  alt=""> </div>
+  <div class="col-md-2"> <img src="../assets/images/ship2.jpg" alt="" width="150px" height="125px"  ></div>
+  <div class="col-md-2"> <img src="../assets/images/ship3.jpg" alt="" width="150px" height="120px"  ></div>
+  <div class="col-md-2"> <img src="../assets/images/ship4.png" alt="" width="150px" height="120x"  ></div>
+</div> -->

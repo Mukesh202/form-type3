@@ -1,0 +1,20 @@
+<p>grupingform works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form [formGroup]="contactform">
+                <input type="text" name="username" FormControl="username" FormControlName="username"><br> <br>
+                <input type="password" name="password" FormControl="password" FormControlName="password"> <br> <br>
+                <input type="text" name="address" FormControl="address" FormControlName="address"> <br> <br>
+                <input type="text" name="street" FormControl="street" FormControlName="street"> <br> <br>
+                <input type="text" name="pinnumber" FormControl="pinnumber" FormControlName="pinnumber"><br> <br>
+                <input type="text" name="plotnumber" FormControl="plotnumber" FormControlName="plotnumber"><br> <br>
+                <button  type="submit" class="btn btn-primary" (click)="collectdata()">submit</button>
+                
+            </form>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+   
+</div>
